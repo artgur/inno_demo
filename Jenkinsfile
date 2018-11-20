@@ -1,6 +1,7 @@
 pipeline {
     agent {
         docker {
+            label 'docker'
             image 'golang:1.11.2-alpine3.8'
         }
     }
